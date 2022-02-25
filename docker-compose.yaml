@@ -1,0 +1,10 @@
+version: "3"
+services:
+  docker-tor-proxy:
+    image: chrisbensch/docker-tor-proxy:latest
+    #network_mode: host
+    #volumes:
+    #  - ./i2pconfig:/var/lib/i2p/i2p-config
+    ports:
+      - '9050:9050'
+      - '9150:9150'

@@ -1,4 +1,4 @@
-# synology-tor-client-minimal
+# tor-client-minimal
 
 Tor client (Socks proxy ) version 0.4.3.5-r0 image - Tor client image qualified for Docker on Synology NAS. This Docker image launch a Tor client with a Socks proxy on port 9150 (SocksPort 0.0.0.0:9150).
 
@@ -18,4 +18,3 @@ Tor : version 0.4.3.5-r0
 6. Launch the container.
 7. To use, configure your browser/client to use a SOCKS server with the IP of the NAS and server port: 9150. (Use TorBrowser and change connection settings in preferences panel)
 8. Your Tor client is running.
-
