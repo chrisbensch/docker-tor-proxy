@@ -10,4 +10,4 @@ COPY ./torrc /etc/tor/torrc
 EXPOSE 9050 9051
 
 USER tor
-CMD /usr/bin/tor -f /etc/tor/torrc
+ENTRYPOINT ["/usr/bin/tor", "-f", "/etc/tor/torrc"]
