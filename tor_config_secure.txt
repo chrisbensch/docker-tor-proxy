@@ -1,0 +1,21 @@
+
+
+# Strictly exclude all circuits that do not match our preferences.
+# This WILL prevent connectivity to some hidden services.
+# Turning off StrictNodes wouldn't be terrible,
+# mostly used when connecting to hidden services
+# If you prefer not to be strict, change following line to 'StrictNodes 0'
+StrictNodes 1
+
+# Exclude 4 eyes countries + Israel.
+# Also exclude questionable relays.
+ExcludeNodes BadExit, {gb}, {nz}, {au}, {il}
+
+# Only use entry nodes from your region.
+# Your own region can already see you connecting.
+# No reason for a Rio client to connect to a Moskow guard.
+EntryNodes {ca}, {us}
+
+# Avoid disk writes, are there any drawbacks to this?
+AvoidDiskWrites 1
+
