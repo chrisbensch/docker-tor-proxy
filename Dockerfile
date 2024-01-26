@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update && \
   apk upgrade && \
-  apk add tor && \
+  apk add tor nyx && \
   rm /var/cache/apk/*
 
 COPY ./torrc /etc/tor/torrc
