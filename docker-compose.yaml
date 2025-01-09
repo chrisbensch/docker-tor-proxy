@@ -1,4 +1,4 @@
-version: "3"
+---
 services:
   tor-proxy:
     image: chrisbensch/docker-tor-proxy:latest
