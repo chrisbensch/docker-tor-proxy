@@ -17,6 +17,7 @@ RUN apk update && \
   rm /var/cache/apk/*
 
 COPY --from=builder /lyrebird/lyrebird /usr/bin/lyrebird
+RUN chmod +x /usr/bin/lyrebird
 
 COPY ./torrc.lyrebird /etc/tor/torrc
 

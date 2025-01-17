@@ -38,7 +38,7 @@ ExcludeNodes BadExit, {au}, {il}, {nz}, {gb}
 # Only use entry nodes from your region.
 # Your own region can already see you connecting.
 # No reason for a Rio client to connect to a Moskow guard.
-EntryNodes {ca}, {us}
+#EntryNodes {ca}, {us}
 
 # Avoid disk writes, are there any drawbacks to this?
 AvoidDiskWrites 1
@@ -48,5 +48,9 @@ AvoidDiskWrites 1
 #MapAddress palladium.libera.chat libera75jm6of4wxpxt4aynol3xjmbtxgfyjpu34ss4d7r7q2v5zrpyd.onion
 #MapAddress charm.oftc.net oftcnet6xg6roj6d7id4y4cu6dchysacqj2ldgea73qzdagufflqxrid.onion
 
-ClientTransportPlugin obfs4 exec /usr/local/bin/lyrebird
+UseBridges 1
 
+ClientTransportPlugin obfs4 exec /usr/bin/lyrebird
+
+Bridge  obfs4 75.127.13.11:7772 D4A0E8782CA745C6E8239D051451671C19A40587 cert=k/HNHNgo0KRJjOvLrlY7HCymKA/Edc3s9JMjVLax7hfazstJKSQEbBrqpFUu+wn03Nxdcg iat-mode=0
+Bridge  obfs4 45.11.183.226:4111 CF41582118B7D06070975A04DB42AF132F908684 cert=lP8casP29EpsdewfKWt07DRwdsZVR9wgk9defJbtFokPqJ9EdSFCv8KMFkCvkaCSXbP6QA iat-mode=0
